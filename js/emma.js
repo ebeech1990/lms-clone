@@ -1,32 +1,9 @@
-//start
-document.getElementById('spe').addEventListener('keyup', function(e) {
+document.getElementById('spe').addEventListener('keyup', function() {
     var kitten = document.getElementById('spe').value;
     kitten = kitten.toLowerCase();
-    if (kitten.search('qwe') !== -1) {
-        alert('potential watchlist');
+    var searchStrings = ['qwe', 'americredit', 'bay view', 'nationwide equ', 'the moss ', 'kurt gei', 'haier', 'objekts'];
+    for (var i = 0; i < searchStrings.length; i++) {
+        if (kitten.search(searchStrings[i]) !== -1) {
+            alert('potential watchlist');
+        }
     }
-        if (kitten.search('americredit') !== -1) {
-            alert('potential watchlist');
-        }
-        if (kitten.search('bay view') !== -1) {
-            alert('potential watchlist');
-        }
-        if (kitten.search('nationwide equ') !== -1) {
-            alert('potential watchlist');
-        }
-        if (kitten.search('the moss ') !== -1) {
-            alert('potential watchlist');
-        }
-        if (kitten.search('kurt gei') !== -1) {
-            alert('potential watchlist');
-        }
-        if (kitten.search('haier') !== -1) {
-            alert('potential watchlist');
-        }
-        if (kitten.search('objekts') !== -1) {
-            alert('potential watchlist');
-        }
-
-    document.getElementById('spe').value = kitten;
-},false);
-//end
